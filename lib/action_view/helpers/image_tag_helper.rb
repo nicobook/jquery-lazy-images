@@ -12,7 +12,7 @@ module ActionView
         options[:class] << " lazy"
 
         output = image_tag_without_laziness('grey.gif', options)
-        output << content_tag('noscript', image_tag_without_laziness(source, orig_options))
+        # output << content_tag('noscript', image_tag_without_laziness(source, orig_options))
       end
 
       alias_method :eager_image_tag, :image_tag
